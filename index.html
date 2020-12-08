@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw-it</title>
+    <link rel="stylesheet" href="../base.css">
+</head>
+
+
+<body>
+<div class="options"></div>
+    </div>
+    <div class="canvasWrap">
+        <canvas class = "canvas2" width="1600" height="1000" id="etch-a-sketch2" ></canvas>
+        <canvas class = "canvas1" width="1600" height="1000" id="etch-a-sketch" ></canvas>
+    </div>
+    <div class="buttons">
+        <button class="clearButton">Clear canvas!</button>
+        <button class="blackColor"></button>
+        <button class="blueColor"></button>
+        <button class="redColor"></button>
+        <button class="greenColor"></button>
+        <button class="yellowColor"></button>
+        <button class="whiteColor"></button>
+        <button class="brushSmall">Small</button>
+        <button class="brushMedium">Medium</button>
+        <button class="brushLarge">Large</button>
+        <button class = "seeResult">See your drawing!</button>
+    </div>
+
+</div>
+
+    
+    <style>
+        body {
+            min-height: 20vh;
+            background: white;
+            background: url(https://inspirationfeed.com/wp-content/uploads/2015/04/blurred-background.jpg);
+            background-size: cover;
+        }
+        
+        canvas {
+            position: absolute;
+            border: 5px groove #9a98ec;
+            border-radius: 10px;
+            background-color: white;
+            width: 800px;
+            height: 500px;
+        }
+        button {
+            margin: 3px;
+            align-items: center;
+            justify-items: center;
+        }
+        .seeResult {
+            background-color: burlywood;
+        }
+
+        .canvas1.opacity {
+            opacity: 0;
+        }
+
+        .buttons{
+            position: relative;
+            top: 530px;
+            left: 20%;
+        }
+
+
+        .canvasWrap {
+            position: relative;
+            left: 20%;
+        }       
+
+        .clearButton {
+            background-color: rgb(253, 99, 99);
+        }
+        .blackColor {
+            background-color: black;
+        }
+        .blueColor {
+            background-color: blue;
+        }
+        .redColor {
+            background-color: red;
+        }
+        .greenColor {
+            background-color: green;
+        }
+        .yellowColor {
+            background-color: yellow
+        }
+        .whiteColor {
+            background-color: white;
+        }
+    </style>
+
+    <script src="drawing.js"></script>
+</body>
+</html>
